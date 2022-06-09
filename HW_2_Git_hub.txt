@@ -1,0 +1,83 @@
+GIT Homework 2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+Ответ:
+GITHUB Draga929=>Repositories=>New=>HM=>Add a README file=>Create repository https://github.com/Draga929/HM.git
+GITBASH:
+$ git clone https://github.com/Draga929/HM.git
+$ cd HM
+$ git branch Postman
+$ git branch Jmeter
+$ git branch CheckLists
+$ git branch Bag_Reports
+$ git branch SQL
+$ git branch Charles
+$ git branch Mobile_testing
+$ git branch
+  Bag_Reports
+  Charles
+  CheckLists
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+* main
+==========================================================================
+2. Запушить все ветки на внешний репозиторий:
+$ git push --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта:
+$ git checkout Bag_Reports
+$ touch bag_report.txt
+$ vim bag_report.txt
+========================================
+1. ID - Идентификационный номер бага
+2. Title or Summary - Заголовок,краткое описание.Раздел,который кратко передает суть бага одним предложением.Отвечает на вопросы Что?,Где?,При каких обстоятельствах?
+3. Project - Название проекта,сайта,программы или приложения, в котором выявлен баг
+4. Enviroment:
+    4.1. OS - Операционная система содержащая баг
+    4.2. Browser - Браузер содержащий баг
+5. Component - Название части или функции тестируемого продукта
+6. Build - Номер сборки проекта
+7. Steps to Reproduce - Шаги воспроизведения.Точная последовательность действий,которая приводит к тому,чтобы воспроизвести баг
+8. Actual result - Фактический результат.К чему приводит воспроизведение шагов,как сейчас работает программа
+9. Expected result - Ожидаемый результат.Как должна работать программа на самом деле и к чему должны приводить действия, описанные в пункте'Шаги к воспроизведению'
+10. Severity - Серьезность.Параметр,определяющий влияние бага на работу программы по шкале S0 до S4
+11. Priority - Приоритет.Параметр, определяющий срочность исправления бага по шкале от P1 до P3
+12. Status - Определяется в зависимости от того, на какой стадии находится баг:открыт,в работе,исправлен,отклонен,отсрочен и т.д.
+13. Author - Автор бага
+14. Attachments - Ссылка на картинку или видео с багом
+=====================================================
+4. Запушить структуру багрепорта на внешний репозиторий:
+$ git push -u origin Bag_Reports
+5. Вмержить ветку Bag Reports в Main:
+$ git checkout main
+$ git merge Bag_Reports
+$ git add bag_report.txt
+$ git commit -m "add one txt file"
+6. Запушить main на внешний репозиторий:
+$ git push
+7. В ветке CheckLists набросать структуру чек листа:
+$ git checkout CheckLists
+$ touch cheklists.txt
+$ vim cheklists.txt
+ID("Номер")  Tester Actions («Проверка», «Действия тестировщика») Actual Result («Результат») Comment («Комментарий»)
+8. Запушить структуру на внешний репозиторий:
+$ git push -u origin CheckLists
+$ git checkout main
+$ git merge CheckLists
+$ git add cheklists.txt
+$ git commit -m "add cheklists.txt"
+$ git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main:
+Pull Request=>New pull request=>base:main<-compare:CheckLists
+10. Синхронизировать Внешнюю и Локальную ветки Main:
+$ git pull
+$ git push
+=======================================================================
+THE END
