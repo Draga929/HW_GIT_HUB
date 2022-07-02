@@ -1,3 +1,4 @@
+================================================================================
 GIT Homework 1
 Для выполнения задания у вас должен быть установлен для Windows - GitBash.
 Создан аккаунт в GitHub
@@ -7,7 +8,7 @@ GIT Homework 1
  2. Сценарий перенесите в этот файл.
  3. На против каждого действия - напишите команду в GitBash
 Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
-===========================================================================
+================================================================================
 JSON
 4. Создать внешний репозиторий c названием JSON: Draga929=>Repositories=>New=>JSON=>Add a README file=>Create repository
 5. Клонировать репозиторий JSON на локальный компьютер: JSON=>Code=>Copy=>HTTPS=>https://github.com/Draga929/JSON.git
@@ -122,8 +123,7 @@ $ vim sklls.xml
         <skils3>"Load testing in Jmeter"</skils3>
         <skils4>"Scrum Development Methodology"</skils4>
         <skils5>"Postgres database"</skils5>
-32. Сделать коммит в одну строку:$ git add .
-$ git commit -m "add two file"
+32. Сделать коммит в одну строку:$ git add . && git commit -m "add two file"
 33. Отправить сразу 2 файла на внешний репозиторий:$ git push
 34. На веб интерфейсе создать файл bug_report.xml:add file=>create new file=>bug_report.xml
 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе:Commit new file=>"Create bug_report.xml"=>
@@ -150,7 +150,7 @@ Draga929/JSON/bug_report.xml=>Edit this file
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе:Commit changes=>"Update bug_report.xml"=>
 =>Commit directly to the main branch.=>Commit changes
  38. Синхронизировать внешний и локальный репозиторий XML: git pull
-=======================================================================
+==========================================================================================================================================
 TXT
 1. Создать внешний репозиторий c названием TXT:=>Draga929=>Repositories=>New=>TXT=>Add a README file=>Create repository
 2. Клонировать репозиторий TXT на локальный компьютер:TXT=>Code=>Copy=>HTTPS=> Clone https://github.com/Draga929/TXT.git
@@ -191,8 +191,7 @@ $ vim sklls.txt
 4. skils4 - Scrum Development Methodology
 5. skils5 - Postgres database
 =====================================
-12. Сделать коммит в одну строку:$ git add .
-$ git commit -m "add two file"
+12. Сделать коммит в одну строку:$ git add . && git commit -m "add two file"
 13. Отправить сразу 2 файла на внешний репозиторий:$ git push
 14. На веб интерфейсе создать файл bug_report.txt:add file=>create new file=>
 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе:Commit new file=>"Create bug_report.txt"=>
